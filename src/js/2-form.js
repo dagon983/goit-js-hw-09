@@ -27,8 +27,8 @@ function handleSubmit(event) {
 } 
 
 function saveInfo(event) {
-    formData.email = email.value;
-    formData.message = textarea.value;
+    formData.email = email.value.trim();
+    formData.message = textarea.value.trim();
     localStorage.setItem("feedback-form-state", JSON.stringify(formData))
 }
 
